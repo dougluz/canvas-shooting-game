@@ -1,0 +1,82 @@
+<style>
+  body {
+    margin: 0;
+    background-color: black;
+  }
+
+  .fixed {
+    position: fixed;
+  }
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .score {
+    color: white;
+    padding: 10px;
+    width: 100%;
+    gap: 10px;
+    font-size: 24px;
+    user-select: none;
+  }
+
+  .modal {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .container {
+    background-color: white;
+    max-width: 640px;
+    width: 100%;
+    padding: 32px 24px 32px 24px;
+    text-align: center;
+  }
+
+  .container__score {
+    font-size: 100px;
+    margin: 0;
+    font-weight: bold;
+    line-height: 0.8;
+  }
+
+  .container__label {
+    font-size: 20px;
+    color: gray;
+    margin: 0;
+  }
+
+  .button {
+    background-color: blueviolet;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    margin-top: 15px;
+    font-size: 32px;
+  }
+</style>
+<div class="score fixed flex-center">
+  <span>Score:</span><span id="scoreEl">0</span>
+</div>
+
+<div class="modal fixed flex-center" id="modalEl">
+  <div class="container">
+    <h1 class="container__score" id="finalScoreEl">0</h1>
+    <p class="container__label">Points</p>
+    <button id="startGameBtn" class="button" type="button">Start Game</button>
+  </div>
+</div>
+<canvas></canvas>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+  integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="./index.js"></script>
