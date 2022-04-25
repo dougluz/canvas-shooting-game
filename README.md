@@ -8,6 +8,10 @@ Bigger enemies needs more shoots to die. Every hit in a enemy gives you 100 poin
 
 This game was developed following the tutorial available in [Chris Courses](https://www.youtube.com/channel/UC9Yp2yz6-pwhQuPlIDV_mjA). The intention here was learne more about the HTML Canvas and his usages.
 
+## How to run
+
+Simple open `index.html` with your favorite browser ~~(that's not internet explorer)~~ and enjoy. 
+
 ## Technologies
 
 - HTML
